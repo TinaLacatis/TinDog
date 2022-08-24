@@ -1,25 +1,32 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
-h1{
+h1, h2, h3{
+    font-weight: 900;
+    line-height: 1.5;
+}
+.big-heading{
     font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 1.5;
 }
-h2{
+.section-heading{
     font-size: 3rem;
-    font-weight: 900;
-    line-height: 1.5;
 }
-h3{
-    font-weight: 900;
-    line-height: 1.5;
+p{
+    color: #8f8f8f;
+}
+.container-fluid{
+    padding: 7% 15%;
+}
+.colored-section{
+    background-color: #ff4c68;
+    color:#fff;
+}
+.white-section{
+    background-color: #fff;
 }
 
 /* NAVBAR */
-.container-fluid{
-    padding: 3% 15%;
-}
 .navbar{
     padding-bottom:4.5rem;
 }
@@ -37,28 +44,29 @@ h3{
 }
 
 /* HEADER */
-#title{
-    background-color: #ff4c68;
-    color:#fff;
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align:left;
 }
 .download-button{
     margin:5% 3% 5% 0;
 }
+.header-img-pos{
+    position:relative;
+}
 .header-img{
+    position: absolute;
+    right: 30%;;
     width: 60%;
     transform: rotate(25deg);
 }
 
 /* FEATURES */
 #features{
-    text-align: center;
-    padding: 7% 15%;
+    position: relative;
 }
 #features .col-lg-4{
     padding: 0 4.5%;
-}
-#features p{
-    color: #8f8f8f;
 }
 .features-icon{
     color:#ef8172;
@@ -71,23 +79,16 @@ h3{
 /* TESTIMONIALS */
 #testimonials{
     background-color: #ef8172;
-    color: #fff;
-    text-align: center;
-    
 }
 .testimonial-img{
     border-radius: 100%;
     margin: 20px;
     width: 10%;
 }
-.carousel-item{
-    padding: 7% 15%;
-}
 
 /* PRESS */
 #press{
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 .press-logo{
@@ -98,8 +99,28 @@ h3{
 /* PRICING */
 #pricing{
     padding: 100px;
-    text-align: center;
 }
 .pricing-col{
 padding: 3% 2%;
+}
+
+/* */
+
+/* FOOTER */
+.footer-icon{
+    margin: 20px 10px;
+}
+.footer-icon-section{
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1028px) {
+    #title{
+        text-align: center;
+    }
+    .header-img{
+        position:static;
+        transform: none;
+    }
 }
